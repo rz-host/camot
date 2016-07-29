@@ -1971,23 +1971,6 @@ Array.prototype.slice.call(document.querySelectorAll('.nav-item')).forEach(funct
     navCollapse.close();
   });
 });
-// Add pictures:
-// FIXME: set container width, investigate logo centering
-if (innerWidth>1024) {
-  loadPictures();
-}
-function loadPictures() {
-  var l=document.getElementById('imgl')
-  l.src='img/rzf.jpg';
-  l.alt='Roland Zimmerman Family';
-  // Clear display: none;
-  l.style='';
-  var r=document.getElementById('imgr')
-  r.src='img/ehk.jpg';
-  r.alt='Ed and Helen Kurtz';
-  // Clear display: none;
-  r.style='';
-}
 // External code for generating a simple dynamic Table of Contents
 function generateTableOfContents(els) {
 	var anchoredElText;
